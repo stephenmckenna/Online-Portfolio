@@ -1,0 +1,96 @@
+body {
+    font-family: 'Bodoni Moda', serif;
+    background-color: #FFFFFF;
+}
+
+.box {
+    height: 50px;
+    width: 90vw;
+    margin: 89px auto;
+    background-color: #95B46A;
+    border-radius: 5px;
+}
+
+#name {
+    font-size: 50px;
+    color: #3E5622;
+    position: absolute;
+    top: -20px;
+    left: 6.5vw;
+    cursor: default;
+
+}
+
+#title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 65px;
+    left: 6.5vw;
+    cursor: default
+}
+
+.fa {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    right: 6vw;
+    top: 5vh;
+}
+
+.fa-linkedin, .fa-linkedin:visited {
+    color: #0072b1;
+}
+
+.fa-github, .fa-github:visited {
+    color: black;
+}
+
+.menuOptions {
+    display: flex;
+    height: 50px;
+    width: 55vw;
+    position: absolute;
+    left: 37vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 20px;
+    flex-basis: 12.5vw;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.25s;
+}
+
+.option:hover {
+    background-color: #809b5a;
+    cursor: pointer;
+}
+
+
+
+
+
