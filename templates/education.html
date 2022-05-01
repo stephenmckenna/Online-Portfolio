@@ -1,5 +1,38 @@
 {% extends 'hometemplate.html' %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='educationStyles.css') }}">
+{% endblock styles %}
+
 {% block content %}
-    <h1>Education</h1>
+    <p class="title">Education</p>
+    <div class="decor"></div>
+    <img src="{{ url_for('static',filename='/media/cathedralOfLearning.png') }}" alt="image" class="img" id="cathedral"/>
+    <img src="{{ url_for('static',filename='/media/pittLogo.png') }}" alt="image" class="img" id="pittLogo"/>
+    <p class="text" id="schoolText">
+        - Expecting to graduate in December 2022 with a B.S. in Computer Science after
+        3.5 years.<br><br>
+        - Participated in Computer Science Club, making connections and
+        attending club events.<br><br>
+        - Current GPA of <strong>3.5</strong>
+    </p>
+    <div class="courseContainer">
+        <div class="label">Relevant Courses Completed</div>
+        <ul class="content">
+            <p>* - In Progress</p>
+            <li>CS0401 - Intermediate Programming Using Java</li>
+            <li>CS0441 - Discrete Structures for Mathematics</li>
+            <li>CS0445 - Data Structures</li>
+            <li>CS0447 - Computer Organization and Assembly Language</li>
+            <li>CS0449 - Introduction to Systems Software</li>
+            <li>CS1501 - Algorithm Implementation</li>
+            <li>CS1502 - Formal Methods in Computer Science</li>
+            <li>CS1520 - Programming Languages for Web Applications</li>
+            <li>CS1530 - Software Engineering</li>
+            <li>CS1550 - Operating Systems</li>
+            <li>CS1555 - Database Management Systems</li>
+            <li>CS1566 - Introduction to Computer Graphics *</li>
+            <li>CS1656 - Introduction to Data Science</li>
+        </ul>
+      </div>
 {% endblock content %}

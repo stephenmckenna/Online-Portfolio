@@ -10,7 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Manrope:wght@200&display=swap" rel="stylesheet">        
 
         <!--stylesheet (css)-->
-        <link href="../static/homeStyles.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static',filename='homeStyles.css') }}">
+        {% block styles %}
+        {% endblock styles %}
 
         <!--script (js)-->
         <script src="{{url_for('static', filename='script.js')}}"></script>

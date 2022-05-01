@@ -1,15 +1,22 @@
 {% extends 'hometemplate.html' %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='aboutMeStyles.css') }}">
+{% endblock styles %}
+
 {% block content %}
+    <p class="title">About Me</p>
     <div class="decor" id="left"></div>
-    <img src="/static/me.jpg" alt="image" class="img" id="me"/>
+    <img src="{{ url_for('static',filename='/media/me.jpg') }}" alt="image" class="img" id="me"/>
     <div class="decor" id="right"></div>
-    <img src="/static/meAndCaia.jpeg" alt="image" class="img" id="meAndCaia"/>
+    <img src="{{ url_for('static',filename='/media/meAndCaia.jpeg') }}" alt="image" class="img" id="meAndCaia"/>
     <p class="text" id="intro">
-            Hello! My name is Stephen McKenna, a senior Computer Science student at the<br>
-        University of Pittsburgh. This website is for me to present the work I have accomplished<br>
+        Hello! My name is Stephen McKenna, a senior Computer Science student at the<br>
+        University of Pittsburgh. In the future, I hope to work with autonomous vehicles<br>
+        as a Full-Stack Engineer. This website is for me to present the work I have accomplished<br>
         thus far in my career in technology. Here you'll find information about my education<br>
-        and past job experience, as well as a list of numerous projects I have completed both academically and recreationally.
+        and past job experience, as well as a list of numerous projects I have completed<br>
+        both academically and recreationally.
     </p>
     <p class="text" id="websiteInfo">
             I built this website from scratch in Visual Studio Code<br>

@@ -1,0 +1,127 @@
+.title {
+    font-size: 40px;
+    color: #3E5622;
+    position: absolute;
+    left: 2vw;
+    top: -3vh;
+}
+
+.img {
+    width: 25vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 5;
+    
+}
+.img#me {
+    left: -40vw;
+    top: 10vh;
+    animation: img-in-to-right 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+.img#meAndCaia {
+    left: 100vw;
+    top: 40vh;
+    animation: img-in-to-left 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.decor {
+    height: 40vh;
+    width: 15vw;
+    background-color: #95B46A;
+    position: absolute;
+    z-index: 4;
+    
+}
+.decor#left {
+    left: -9vw;
+    top: 8vh;
+    animation: decor-in-to-right 0.5s;
+    animation-fill-mode: forwards;
+}
+.decor#right {
+    left: 100vw;
+    top: 33vh;
+    animation: decor-in-to-left 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img-in-to-right {
+    from {
+        opacity: 0%;
+    }
+    to {
+        left: 5vw;
+        opacity: 100%;
+    }
+}
+@keyframes decor-in-to-right {
+    from {
+        opacity: 0%;
+    }
+    to {
+        left: 1vw;
+        opacity: 100%;
+    }
+}
+@keyframes img-in-to-left {
+    from {
+        opacity: 0%;
+    }
+    to {
+        left: 60vw;
+        opacity: 100%;
+    }
+}
+@keyframes decor-in-to-left {
+    from {
+        opacity: 0%;
+    }
+    to {
+        left: 73vw;
+        opacity: 100%
+    }
+}
+
+.text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+.text#intro {
+    position: absolute;
+    left: 35vw;
+    top: 100vh;
+    animation: textFadeIn1 1s ease-out 1s forwards;
+}
+.textLink, .textLink:visited {
+    color: #95B46A;
+}
+.text#websiteInfo {
+    position: absolute;
+    left: 28vw;
+    top: 100vh;
+    animation: textFadeIn2 1s ease-out 1.3s forwards;
+}
+@keyframes textFadeIn1 {
+    from {
+        opacity: 0%;
+        top: 40vh;
+    }
+    to {
+        opacity: 100%;
+        top: 10vh;
+    }
+}
+@keyframes textFadeIn2 {
+    from {
+        opacity: 0%;
+        top: 75vh;
+    }
+    to {
+        opacity: 100%;
+        top: 45vh;
+    }
+}
