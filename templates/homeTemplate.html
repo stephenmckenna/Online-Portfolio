@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Manrope:wght@200&display=swap" rel="stylesheet">        
+
+        <!--stylesheet (css)-->
         <link href="../static/homeStyles.css" rel="stylesheet">
+
+        <!--script (js)-->
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+
+        <!--title-->
         <title>Stephen McKenna</title>
     </head>
     <body>
@@ -14,24 +24,21 @@
             <a href="https://www.github.com/stephenmckenna" class="fa fa-github" target="_blank"></a>
         </div>
         <div class="box" id="header">
-            <div class="menuOptions">
-                <div class="option">
-                    About Me
-                </div>
-                <div class="option">
-                    Education
-                </div>
-                <div class="option">
-                    Experience
-                </div>
-                <div class="option">
-                    Projects
-                </div>
-            </div>
+            <nav class="menuOptions">
+                <a href="{{ url_for('aboutMe') }}" class="option" id="aboutMeBtn">About Me</a>
+                <a href="{{ url_for('education') }}" class="option" id="educationBtn">Education</a>
+                <a href="{{ url_for('experience') }}" class="option" id="experienceBtn">Experience</a>
+                <a href="{{ url_for('projects') }}" class="option" id="projectsBtn">Projects</a>
+            </nav>
         </div>
         <p id="name">Stephen McKenna</p>
         <p id="title">Software Engineer</p> 
 
-        <button class="contactMeBtn" value="Contact Me!"></button>
+        <div class="contactMeBtn">Contact Me</div>
+
+        <div class="pageContent">
+            {% block content %}
+            {% endblock content %} 
+        </div>
     </body>
 </html>
