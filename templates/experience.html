@@ -1,5 +1,52 @@
 {% extends 'hometemplate.html' %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='experienceStyles.css') }}">
+{% endblock styles %}
+
 {% block content %}
-    <h1>Experience</h1>
+    <p class="title">Experience</p>
+    <div class="container">
+        <div class="item" id="pnc">
+            <img src="{{ url_for('static', filename='media/pnc.png') }}" class="img" id="pncImg">
+            <p class="job">Technology Intern</p> 
+            <p class="date">May 2022 - August 2022</p>
+            <p class="jobDesc" id="pnc">
+                - TBD
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="item" id="ta">
+            <img src="{{ url_for('static', filename='media/pittLogo.png') }}" class="img" id="taImg">
+            <p class="job">Undergraduate Teaching Assistant</p>
+            <p class="date">August 2020 - April 2021</p>
+            <p class="jobDesc" id="ta">
+                - Led recitations to assist 51 students in completing their<br>programming coursework<br>
+                - Held office hours twice a week allowing students to visit<br>
+                at their leisure and answered any questions they had to the<br>best of my ability
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="item" id="bny">
+            <img src="{{ url_for('static', filename='media/bny.png') }}" class="img" id="bnyImg">
+            <p class="job">Software Engineering Intern</p>
+            <p class="date">July 2019 - August 2019</p>
+            <p class="jobDesc" id="bny">
+                - Selected as 1 of 7 individuals to enter program following high school<br>
+                - Worked in Hardware Asset Management<br>
+                - Developed 2 Python applications used routinely in a world-wide database<br>of hardware information within the corporation
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="item" id="northway">
+            <img src="{{ url_for('static', filename='media/northway.png') }}" class="img" id="northwayImg">
+            <p class="job">Technology and Creative Production Intern</p>
+            <p class="date">April 2019 - August 2019</p>
+            <p class="jobDesc" id="northway">
+                - Designed, built, and operated stage designs, lighting cues,<br>
+                and audio equipment for the production of weekly church services<br>
+                - Produced and distributed service-order playlists to several<br>recipients for remote use
+            </p>
+        </div>
+    </div>
 {% endblock content %}

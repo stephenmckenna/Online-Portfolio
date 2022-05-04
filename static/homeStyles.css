@@ -1,3 +1,6 @@
+p {
+    line-height: 30px;
+}
 
 body {
     font-family: 'Bodoni Moda', serif;
@@ -16,7 +19,7 @@ body {
     font-size: 50px;
     color: #3E5622;
     position: absolute;
-    top: -20px;
+    top: 5px;
     left: 6.5vw;
     cursor: default;
 
@@ -27,7 +30,7 @@ body {
     font-size: 30px;
     color: white;
     position: absolute;
-    top: 65px;
+    top: 70px;
     left: 6.5vw;
     cursor: default
 }

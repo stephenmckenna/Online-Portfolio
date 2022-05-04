@@ -14,8 +14,7 @@
         {% block styles %}
         {% endblock styles %}
 
-        <!--script (js)-->
-        <script src="{{url_for('static', filename='script.js')}}"></script>
+
 
         <!--title-->
         <title>Stephen McKenna</title>
@@ -42,5 +41,9 @@
             {% block content %}
             {% endblock content %} 
         </div>
+
+        <!--script-->
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+        
     </body>
 </html>

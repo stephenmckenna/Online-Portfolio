@@ -79,7 +79,7 @@
 .courseContainer {
     font-family: 'manrope', sans-serif;
     position: absolute;
-    top: 32vh;
+    top: 33vh;
     left: 26vw;
     opacity: 0%;
     animation: fadeIn 1s 1.75s forwards;
