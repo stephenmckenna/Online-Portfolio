@@ -63,6 +63,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    right: 10%;
+    opacity: 0%;
+}
+.item-animation {
+    animation: fade-in 1.25s ease-in-out forwards;
+}
+@keyframes fade-in {
+    0% {}
+    100% {opacity: 100%;
+          right: 0%;}
 }
 
 .job {
