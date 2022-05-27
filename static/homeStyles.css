@@ -1,61 +1,88 @@
-p {
-    line-height: 30px;
-}
-
 body {
-    font-family: 'Bodoni Moda', serif;
     background-color: #FFFFFF;
 }
 
-.box {
-    height: 50px;
-    width: 90vw;
-    margin: 89px auto;
-    background-color: #95B46A;
-    border-radius: 5px;
+.topWrapper {
+    width: 100%;
 }
 
 #name {
-    font-size: 50px;
+    font-family: 'Bodoni Moda', serif;
     color: #3E5622;
-    position: absolute;
-    top: 5px;
-    left: 6.5vw;
-    cursor: default;
-
+    font-size: 45px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-overflow: wrap;
+    text-align: center;
+    line-height: 50px;
 }
 
 #jobTitle {
     font-family: 'Manrope', sans-serif;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 70px;
-    left: 6.5vw;
-    cursor: default
+    color: #95B46A;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+
 }
 
-.fa {
-    padding: 5px;
-    margin-left: 5px;
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+.box {
+    width: 100vw;
+    height: 40px;
+    background-color: #95B46A;
+    border-radius: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    margin-top: 15px;
+    
+}
+
+.menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.option {
+    font-family: 'Manrope', sans-serif;
+    color: white;
     text-decoration: none;
-    display: inline-block;
-  }
+    margin-top: 7.5px;
+}
+.option:visited {
+    color: white;
+    text-decoration: none;
+}
 
 .socials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    bottom: 20px;
+    left: 3vw;
+    height: 150px;
     width: 75px;
-    position: absolute;
-    right: 6vw;
-    top: 5vh;
+    z-index: 50;
+    
+}
+.fa {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-linkedin, .fa-linkedin:visited {
@@ -64,36 +91,6 @@ body {
 
 .fa-github, .fa-github:visited {
     color: black;
-}
-
-.menuOptions {
-    display: flex;
-    height: 50px;
-    width: 55vw;
-    position: absolute;
-    left: 37vw;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.option {
-    font-family: 'Manrope', sans-serif;
-    color: white;
-    font-size: 20px;
-    flex-basis: 12.5vw;
-    flex-shrink: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.25s;
-    text-decoration: none;
-}
-
-.option:hover {
-    background-color: #809b5a;
-    cursor: pointer;
 }
 
 .contactMeBtn {
@@ -109,25 +106,172 @@ body {
     font-family: 'Manrope', sans-serif;
     position: fixed;
     right: 5vw;
-    bottom: 5vh;
+    bottom: 30px;
     transition: all 0.25s;
     font-size: 25px;
     z-index: 50;
     /*border: 3px #95B46A solid;*/
 }
 
-.contactMeBtn:hover {
-    cursor: pointer;
-    background-color: #95B46A;
-    color: white; 
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
-.pageContent {
-    /*border: solid 1px black;*/
-    height: 75vh;
-    position: absolute;
-    width: 90vw;
-    left: 50%;
-    margin-left: -45vw;
-    top: 20vh;
+@media only screen and (min-width: 768px) { /* DESKTOP STYLES*/
+    p {
+        line-height: 30px;
+    }
+
+    body {
+        font-family: 'Bodoni Moda', serif;
+        background-color: #FFFFFF;
+    }
+
+    .box {
+        width: 100vw;
+        height: 40px;
+        background-color: #95B46A;
+        border-radius: 0px;
+        margin: 0px;
+        position: absolute;
+        left: 0px;
+        margin-top: 15px;
+        
+    }
+
+    .box {
+        height: 50px;
+        width: 90vw;
+        margin: 89px auto;
+        background-color: #95B46A;
+        border-radius: 5px;
+        left: none;
+        position: initial;
+    }
+
+    #name {
+        font-size: 50px;
+        color: #3E5622;
+        position: absolute;
+        top: -7px;
+        left: 6.5vw;
+        cursor: default;
+
+    }
+
+    #jobTitle {
+        font-family: 'Manrope', sans-serif;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 6.5vw;
+        cursor: default
+    }
+
+    .fa {
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: none;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        width: 75px;
+        position: absolute;
+        right: 6vw;
+        top: 40px;
+        left: auto;
+        bottom: auto;
+    }
+
+    .fa-linkedin, .fa-linkedin:visited {
+        color: #0072b1;
+    }
+
+    .fa-github, .fa-github:visited {
+        color: black;
+    }
+
+    .menuList {
+        display: flex;
+        height: 50px;
+        width: 55vw;
+        position: absolute;
+        left: 37vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .option {
+        font-family: 'Manrope', sans-serif;
+        color: white;
+        font-size: 20px;
+        flex-basis: 12.5vw;
+        flex-shrink: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.25s;
+        text-decoration: none;
+        margin-top: 0px;
+    }
+
+    .option:hover {
+        background-color: #809b5a;
+        cursor: pointer;
+    }
+
+    .contactMeBtn {
+        height: 50px;
+        width: 175px;
+        border-radius: 37.5px;
+        background-color: white;
+        color: #3E5622;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Manrope', sans-serif;
+        position: fixed;
+        right: 5vw;
+        bottom: 5vh;
+        transition: all 0.25s;
+        font-size: 25px;
+        z-index: 50;
+        /*border: 3px #95B46A solid;*/
+    }
+
+    .contactMeBtn:hover {
+        cursor: pointer;
+        background-color: #95B46A;
+        color: white; 
+    }
+
+    .pageContent {
+        height: 75vh;
+        position: absolute;
+        width: 90vw;
+        left: 50%;
+        margin-left: -45vw;
+        top: 19vh;
+        /*border: solid 1px black;*/
+    }
+
 }

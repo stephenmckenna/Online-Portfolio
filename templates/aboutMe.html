@@ -9,7 +9,6 @@
     <div class="decor" id="left"></div>
     <img src="{{ url_for('static',filename='/media/me.jpg') }}" alt="image" class="img" id="me"/>
     <div class="decor" id="right"></div>
-    <img src="{{ url_for('static',filename='/media/meAndCaia.jpeg') }}" alt="image" class="img" id="meAndCaia"/>
     <p class="text" id="intro">
         Hello! My name is Stephen McKenna, a senior Computer Science student at the<br>
         University of Pittsburgh. In the future, I hope to work with autonomous vehicles<br>
@@ -18,9 +17,11 @@
         and past job experience, as well as a list of numerous projects I have completed<br>
         both academically and recreationally.
     </p>
+    <img src="{{ url_for('static',filename='/media/meAndCaia.jpeg') }}" alt="image" class="img" id="meAndCaia"/>
     <p class="text" id="websiteInfo">
             I built this website from scratch in Visual Studio Code<br>
             as a pure-python Flask application.<br>
             Check out the source code on my <a class="textLink" href="https://github.com/stephenmckenna" target="_blank">GitHub</a>!
     </p>
+    <div class="bottom"></div>
 {% endblock content %}

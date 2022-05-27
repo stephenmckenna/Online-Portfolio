@@ -11,6 +11,8 @@
 
         <!--stylesheet (css)-->
         <link rel="stylesheet" href="{{ url_for('static',filename='homeStyles.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         {% block styles %}
         {% endblock styles %}
 
@@ -18,25 +20,27 @@
         <title>Stephen McKenna</title>
     </head>
     <body>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/-stephenmckenna" class="fa fa-linkedin" target="_blank"></a>
-            <a href="https://www.github.com/stephenmckenna" class="fa fa-github" target="_blank"></a>
-        </div>
-        <div class="box" id="header">
-            <nav class="menuOptions">
-                <a href="{{ url_for('aboutMe') }}" class="option" id="aboutMeBtn">About Me</a>
-                <a href="{{ url_for('education') }}" class="option" id="educationBtn">Education</a>
-                <a href="{{ url_for('experience') }}" class="option" id="experienceBtn">Experience</a>
-                <a href="{{ url_for('projects') }}" class="option" id="projectsBtn">Projects</a>
-            </nav>
-        </div>
-        <p id="name">Stephen McKenna</p>
-        <p id="jobTitle">Software Engineer</p> 
-        <div class="contactMeBtn">Contact Me</div>
+        <div class="topWrapper">
+            <p id="name">Stephen McKenna</p>
+            <p id="jobTitle">Software Engineer</p> 
+            <div class="box" id="header">
+                <nav class="menuList">
+                    <a href="{{ url_for('aboutMe') }}" class="option" id="aboutMeBtn">About Me</a>
+                    <a href="{{ url_for('education') }}" class="option" id="educationBtn">Education</a>
+                    <a href="{{ url_for('experience') }}" class="option" id="experienceBtn">Experience</a>
+                    <a href="{{ url_for('projects') }}" class="option" id="projectsBtn">Projects</a>
+                </nav>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/-stephenmckenna" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://www.github.com/stephenmckenna" class="fa fa-github" target="_blank"></a>
+            </div>
+            <div class="contactMeBtn">Contact Me</div>
 
-        <div class="pageContent">
-            {% block content %}
-            {% endblock content %} 
+            <div class="pageContent">
+                {% block content %}
+                {% endblock content %} 
+            </div>
         </div>
 
         <!--script-->

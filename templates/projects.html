@@ -1,5 +1,10 @@
 {% extends 'hometemplate.html' %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='projectStyles.css') }}">
+{% endblock styles %}
+
 {% block content %}
     <p id="title">Projects</p>
+    <p id="msg">Coming Soon</p>
 {% endblock content %}
