@@ -1,9 +1,12 @@
 body {
     background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
 }
 
-.topWrapper {
-    width: 100%;
+#topWrapper {
+    width: 100vw;
+    height: 100vh;
 }
 
 #name {
@@ -93,7 +96,7 @@ body {
     color: black;
 }
 
-.contactMeBtn {
+#contactMeBtn {
     height: 50px;
     width: 175px;
     border-radius: 37.5px;
@@ -238,9 +241,9 @@ body {
         cursor: pointer;
     }
 
-    .contactMeBtn {
-        height: 50px;
-        width: 175px;
+    #contactMeBtn {
+        height: 75px;
+        width: 262.5px;
         border-radius: 37.5px;
         background-color: white;
         color: #3E5622;
@@ -253,12 +256,12 @@ body {
         right: 5vw;
         bottom: 5vh;
         transition: all 0.25s;
-        font-size: 25px;
+        font-size: 32px;
         z-index: 50;
         /*border: 3px #95B46A solid;*/
     }
 
-    .contactMeBtn:hover {
+    #contactMeBtn:hover {
         cursor: pointer;
         background-color: #95B46A;
         color: white; 

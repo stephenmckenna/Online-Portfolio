@@ -1,0 +1,131 @@
+#overlay {
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.3;
+    z-index: 99;
+    display: none;
+    transition: 0.25s ease-in-out;
+}
+
+#contactMeContainer {
+    display: none;
+    opacity: 0%;
+    height: 75vh;
+    top: 20vh;
+    position: fixed;
+    width: 90vw;
+    left: 5vw;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 1000;
+    margin: 0px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    animation: fadeIn 0.5s ease-in-out both;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@keyframes fadeIn {
+    0%{}
+    100%{opacity: 100%;
+         top: 12.5vh;}
+}
+
+#closeBtn {
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    color: #3E5622;
+    position: absolute;
+    margin: 30px;
+    right: 0px;
+    top: 0px;
+}
+#closeBtn:hover {
+    cursor: pointer;
+}
+
+.blurring {
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    transition: 0.25s ease-in-out;
+}
+
+.unblurring {
+    -webkit-filter: none;
+    filter: none;
+    transition: 0.25s ease-in-out;
+}
+
+.contactMeForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+
+}
+
+.contactMeForm p {
+    margin-top: 10%;
+}
+
+.contactMeForm p {
+    font-family: 'Manrope', sans-serif;
+    color: #95B46A;
+    font-size: 48px;
+}
+
+.contactMeForm input[type=text], .contactMeForm input[type=email], .contactMeForm textarea{
+    width: 80%;
+    height: 5%;
+    font-size: 32px;
+    color: #95B46A;
+    font-family: 'Manrope', sans-serif;
+    border-bottom: 1px solid #95B46A;
+}
+
+.contactMeForm textarea {
+    resize: none;
+    font-size: 24px;
+}
+
+.contactMeForm input, .contactMeForm textArea{
+    outline: none;
+    border: none;
+}
+.contactMeForm input:focus, .contactMeForm textArea:focus {
+    outline: none;
+}
+
+#submitForm {
+    height: 5vh;
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    color: #95B46A;
+    background-color: transparent;
+    margin-bottom: 10%;
+}
+#submitForm:hover {
+    cursor: pointer;
+}
+
+#msgInput {
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) { /* DESKTOP STYLES*/
+
+    #contactMeContainer {
+        width: 35vw;
+        left: 32.5vw;
+    }
+    
+}

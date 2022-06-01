@@ -11,6 +11,7 @@
 
         <!--stylesheet (css)-->
         <link rel="stylesheet" href="{{ url_for('static',filename='homeStyles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='contactMeStyles.css') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         {% block styles %}
@@ -20,7 +21,19 @@
         <title>Stephen McKenna</title>
     </head>
     <body>
-        <div class="topWrapper">
+        <div id="contactMeContainer">
+            <div id="closeBtn">
+                <strong>done</strong>
+            </div>
+            <form class="contactMeForm">
+                <p>Say Hey!</p>
+                <input id="nameInput" type="text" name="name" placeholder="Full Name" required>
+                <input id="emailInput" type="email" name="email" placeholder="Email" required>
+                <textarea id="msgInput" name="msg" placeholder="Message" required></textarea>
+                <div id="submitForm">Submit</div>
+            </form>
+        </div>
+        <div id="topWrapper">
             <p id="name">Stephen McKenna</p>
             <p id="jobTitle">Software Engineer</p> 
             <div class="box" id="header">
@@ -35,16 +48,21 @@
                 <a href="https://www.linkedin.com/in/-stephenmckenna" class="fa fa-linkedin" target="_blank"></a>
                 <a href="https://www.github.com/stephenmckenna" class="fa fa-github" target="_blank"></a>
             </div>
-            <div class="contactMeBtn">Contact Me</div>
+            <div id="contactMeBtn">
+                Contact Me
+            </div>
+
+            <div id="overlay"></div>
 
             <div class="pageContent">
                 {% block content %}
                 {% endblock content %} 
             </div>
         </div>
-
+        
         <!--script-->
         <script src="{{url_for('static', filename='script.js')}}"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         
     </body>
 </html>

@@ -167,6 +167,7 @@
         left: 28vw;
         top: 100vh;
         animation: textFadeIn2 1s ease-out 1.3s forwards;
+        font-size: 18px;
     }
     @keyframes textFadeIn1 {
         from {
